@@ -43,8 +43,6 @@ export default function SignUp() {
     password: ''
   });
 
-  console.log("Hello World")
-
   const [registerUser, { loading }] = useMutation(REGISTER_USER);
   const navigate = useNavigate();
 
