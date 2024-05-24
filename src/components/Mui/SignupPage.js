@@ -27,6 +27,7 @@ const REGISTER_USER = gql`
   }
 `;
 
+
 const defaultTheme = createTheme();
 
 export default function SignUp() {
@@ -41,6 +42,8 @@ export default function SignUp() {
     email: '',
     password: ''
   });
+
+  console.log("Hello World")
 
   const [registerUser, { loading }] = useMutation(REGISTER_USER);
   const navigate = useNavigate();
